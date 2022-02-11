@@ -1,0 +1,5 @@
+.env
+temp.js
+server.log
+workspace*
+node_modules

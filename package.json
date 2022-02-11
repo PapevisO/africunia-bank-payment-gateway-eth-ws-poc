@@ -1,0 +1,11 @@
+{
+  "name": "africunia-bank-payment-gateway",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "eth-provider": "^0.10.0",
+    "ethereumjs-tx": "^2.1.2",
+    "web3": "^1.7.0"
+  }
+}
