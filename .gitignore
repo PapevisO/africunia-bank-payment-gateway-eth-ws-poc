@@ -1,5 +1,6 @@
 .env
 temp.js
-server.log
+server*.log
 workspace*
 node_modules
+tempErc20.js

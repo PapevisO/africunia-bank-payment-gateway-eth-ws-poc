@@ -60,8 +60,10 @@ subscription.on('data', (txHash) => {
   setTimeout(async () =>{
     try {
       let tx = await web3.eth.getTransaction(txHash)
-      if (tx && tx.to && depositAddresses.includes(tx.to.toLowerCase()) )
+      if (tx && tx.to && depositAddresses.includes(tx.to.toLowerCase()) ) {
         dispatchIpn(pendingTxPresenter(tx))
+        subscription.unsubscribe()
+      }
     } catch(error) {
       console.log({Error: error})
     }
